@@ -1,0 +1,16 @@
+3. Analisis Efisiensi Algoritma
+o Hitung kompleksitas waktu (time complexity) dan kompleksitas ruang (space
+complexity) dari algoritma.
+o Bandingkan dengan minimal satu metode lain yang sejenis (dapat berasal dari
+literatur lain atau metode klasik).
+o Sajikan perbandingan efisiensi dalam bentuk tabel atau grafik jika memungkinkan.
+4. Pengembangan Aplikasi
+o Buat aplikasi sederhana berbasis algoritma yang telah dirancang.
+o Bahasa pemrograman bebas: Python, Java, C++, JavaScript, dll.
+o Aplikasi harus mencerminkan permasalahan dan solusi dari jurnal.
+o Lampirkan:
+ Contoh input/output
+ Desain UI sederhana (jika ada)
+
+ Penjelasan singkat implementasi
+ Link source aplikasi dan video penjelasan aplikasi.

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Screening Siswa (FSA)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Screening Penerimaan Siswa Baru (FSA)</h1>
+
+        <div class="input-section">
+            <label for="studentName">Nama Calon Siswa:</label>
+            <input type="text" id="studentName" placeholder="Contoh: Budi Santoso">
+        </div>
+
+        <div class="input-section">
+            <label for="hasUjian">Apakah memiliki nilai ujian?</label>
+            <select id="hasUjian">
+                <option value="no">Tidak</option>
+                <option value="yes">Ya</option>
+            </select>
+        </div>
+        <div class="input-section" id="ujianScoreSection" style="display: none;">
+            <label for="ujianScore">Nilai Ujian:</label>
+            <input type="number" id="ujianScore" min="0" max="100" placeholder="0-100">
+        </div>
+
+        <div class="input-section">
+            <label for="hasPrestasi">Apakah memiliki nilai prestasi?</label>
+            <select id="hasPrestasi">
+                <option value="no">Tidak</option>
+                <option value="yes">Ya</option>
+            </select>
+        </div>
+        <div class="input-section" id="prestasiScoreSection" style="display: none;">
+            <label for="prestasiScore">Nilai Prestasi:</label>
+            <input type="number" id="prestasiScore" min="0" max="100" placeholder="0-100">
+        </div>
+
+        <button onclick="performScreening()">Proses Screening</button>
+
+        <div class="results-section">
+            <h2>Detail Evaluasi:</h2>
+            <p>Status Evaluasi Ujian: <span id="statusUjian"></span></p>
+            <p>Status Evaluasi Prestasi: <span id="statusPrestasi"></span></p>
+            <div class="final-result">
+                <h2>Hasil Screening:</h2>
+                <p id="finalStatus"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
